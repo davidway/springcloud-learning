@@ -8,11 +8,18 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
     @Value("${server.port}")
     String port;
+    @Value("${zhf.test}")
+    private String hello;
+
 
     @RequestMapping("/index")
     public String home() {
         return "hello world i'm port:" + port;
     }
 
+    @RequestMapping("/hello")
+    public String from() {
+        return this.hello;
+    }
 
 }

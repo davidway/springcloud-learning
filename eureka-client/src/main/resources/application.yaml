@@ -4,9 +4,20 @@ server:
 spring:
   application:
     name: ec
+  cloud:
+    config:
+      name: test
+      profile: dev
+     # uri: http://localhost:8000/
+      label: master
+      discovery:
+        enabled:  true
+        serviceId: es
+
+
 
 eureka:
   client:
     serviceUrl:
-      #    ×¢Ã÷×Ô¼ºµÄ·şÎñ×¢²áÖĞĞÄµÄµØÖ·
+      #eurekaç”ŸæˆæœåŠ¡å™¨
       defaultZone: http://localhost:8000/eureka/

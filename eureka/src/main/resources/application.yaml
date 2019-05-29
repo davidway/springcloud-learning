@@ -1,7 +1,7 @@
 server:
   port: 8000
 
-#ͨ��registerWithEureka��false��fetchRegistry��false�������Լ���һ��eureka server.
+#ͨ通过registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
 eureka:
   instance:
     hostname: localhost
@@ -14,4 +14,11 @@ eureka:
 spring:
   application:
     name: es
-
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/davidway/springcloud-learning.git  # 配置git仓库的地址
+          search-paths: repo  # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username: 249261450@qq.com # git仓库的账号
+          password: zhuweiqiang1130 # git仓库的密码
