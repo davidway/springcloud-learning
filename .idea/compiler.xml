@@ -8,14 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="zuul" />
         <module name="testeureka-client" />
+        <module name="eureka-config-server" />
         <module name="eureka-client" />
-        <module name="eureka" />
         <module name="feign" />
         <module name="packing" />
         <module name="ribbon" />
+        <module name="eureka-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="eureka" target="1.8" />
       <module name="hystrix" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -23,6 +25,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
+      <module name="eureka-config-server" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
       <module name="feign" options="-parameters" />
       <module name="hystrix" options="-parameters" />
       <module name="ribbon" options="-parameters" />
