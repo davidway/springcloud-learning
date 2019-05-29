@@ -4,15 +4,6 @@ server:
 spring:
   application:
     name: ec
-  cloud:
-    config:
-      name: test
-      profile: dev
-     # uri: http://localhost:8000/
-      label: master
-      discovery:
-        enabled:  true
-        serviceId: es
 
 
 

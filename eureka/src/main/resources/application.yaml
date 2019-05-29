@@ -14,10 +14,4 @@ eureka:
 spring:
   application:
     name: es
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/davidway/springcloud-learning  # 配置git仓库的地址
-          search-paths: repo  # git仓库地址下的相对地址，可以配置多个，用,分割。
 

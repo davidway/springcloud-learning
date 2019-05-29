@@ -9,7 +9,6 @@ public class IndexController {
     @Value("${server.port}")
     String port;
 
-    private String hello;
 
 
     @RequestMapping("/index")
@@ -17,9 +16,5 @@ public class IndexController {
         return "hello world i'm port:" + port;
     }
 
-    @RequestMapping("/hello")
-    public String from() {
-        return this.hello;
-    }
 
 }
