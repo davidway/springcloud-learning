@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
     @Value("${server.port}")
     String port;
-    @Value("${zhf.test}")
+
     private String hello;
 
 
